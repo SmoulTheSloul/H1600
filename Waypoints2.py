@@ -11,11 +11,11 @@ def print_all_waypoints():
 
     print("Mission waypoints:")
     for i, cmd in enumerate(cmds):
-        print(f"Waypoint {i+1}:")
-        print(f"  Command: {cmd.command}")
-        print(f"  Frame: {cmd.frame}")
-        print(f"  Params: {cmd.params}")
-        print(f"  Auto Continue: {cmd.autocontinue}")
+        print("Waypoint {}: ".format(i + 1))
+        print("  Command: {}".format(cmd.command))
+        print("  Frame: {}".format(cmd.frame))
+        print("  Params: {}".format(cmd.parameters))
+        print("  Auto Continue: {}".format(cmd.autocontinue))
         print("")
 
 # Example usage
